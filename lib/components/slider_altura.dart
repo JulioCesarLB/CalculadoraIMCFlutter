@@ -10,7 +10,6 @@ final int altura;
   const SliderAltura({super.key, required this.altura, required this.onChanged });
   @override
   Widget build(BuildContext context) {
-    double valor= 120;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -18,13 +17,13 @@ final int altura;
           'ALTURA',
           style: labelTextStyle,
         ),
-        const Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.baseline,
           textBaseline: TextBaseline.alphabetic,
           children: <Widget>[
             Text(
-              altura.toString(),
+              '$altura',
               style: numberTextStyle,
             ),
             Text(
